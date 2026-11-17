@@ -1,4 +1,4 @@
-# Store Sales - Phần việc TV1
+# Store Sales
 
 Phần **dữ liệu và EDA của TV1 đã chạy trên 7 CSV thật**. Có bảng dữ liệu nền, báo cáo chất lượng, 6 biểu đồ và notebook đã chạy có kết quả. Những thành viên khác tự chọn mô hình và bổ sung phần việc của mình sau.
 
@@ -134,17 +134,3 @@ Xem chi tiết ngắn gọn trong [docs/TV1.md](docs/TV1.md).
 Giữ CSV gốc và Parquet ngoài Git theo `.gitignore`, kể cả các bản CSV sao chép sang vị trí khác trong dự án. Có thể commit notebook, mã, báo cáo tổng hợp và hình EDA. Người nhận repo thực hiện hướng dẫn ở trên để tự tạo bảng nền từ cùng bộ 7 CSV; không cần chạy EDA hoặc baseline nếu chỉ cần Parquet. Bảng nền chưa có lag/scaler hay mô hình; oil và transactions được kiểm tra nhưng chưa tự ghép vào đầu vào dự báo.
 
 Baseline dùng cùng raw train đã kiểm tra, không sửa bảng nền. Các mô hình khác vẫn tự quyết định scaling/encoding và đặc trưng lịch sử, chỉ fit bước học thống kê trên train của từng lần kiểm định. So sánh với baseline trên cùng origin, ngày/ID validation và RMSLE. Không kết luận mô hình nào tốt hơn nếu chưa có điểm thật của mô hình đó.
-
-## Đẩy lên GitHub
-
-Tự tạo repo trống trên GitHub, rồi chạy trong thư mục này:
-
-```powershell
-git init -b main
-git add .
-git commit -m "Add TV1 data and EDA starter"
-git remote add origin https://github.com/USERNAME/TEN-REPO.git
-git push -u origin main
-```
-
-Thay địa chỉ remote bằng repo của bạn. `.gitignore` đã loại dữ liệu gốc, dữ liệu processed và môi trường Python.
