@@ -1,0 +1,27 @@
+{
+  "method": "same_weekday_mean_28d",
+  "aggregation": "arithmetic_mean",
+  "window_days": 28,
+  "horizon_days": 16,
+  "origin": "2017-07-30",
+  "history_start": "2017-07-03",
+  "history_end": "2017-07-30",
+  "last_observed_history_date": "2017-07-30",
+  "validation_start": "2017-07-31",
+  "validation_end": "2017-08-15",
+  "n_rows": 28512,
+  "n_series": 1782,
+  "rmsle": 0.531130405730008,
+  "fallback_counts": {
+    "same_weekday": 28512
+  },
+  "raw_train_sha256": "99a1b7f4241821df10fa71f23abdd71c634f71f901e3cab1400c0f0c583f862c",
+  "raw_train_unchanged": true,
+  "predictions_path": "outputs/baseline/validation_predictions.csv",
+  "predictions_sha256": "e5eff83a6ea4942161470deecd91467863277ee170ad628e05d75a3cbe99f879",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1"
+  }
+}

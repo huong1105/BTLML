@@ -1,0 +1,104 @@
+{
+  "raw_files": {
+    "train.csv": {
+      "sha256": "99a1b7f4241821df10fa71f23abdd71c634f71f901e3cab1400c0f0c583f862c",
+      "bytes": 121800373
+    },
+    "test.csv": {
+      "sha256": "087ec1ecec76dbba9ea2adb48b8b2fd527c7c59adb82b0dfb9f6f82739400d26",
+      "bytes": 1022269
+    },
+    "stores.csv": {
+      "sha256": "af503b2bce11d7906d249f81cc0598f10e2addcc9f6c59aa2d95c9f2652c296b",
+      "bytes": 1387
+    },
+    "oil.csv": {
+      "sha256": "944b23b857580f9d804399346fd3ed69bffcb7facfd98c55fdb408b8d057cca7",
+      "bytes": 20580
+    },
+    "transactions.csv": {
+      "sha256": "e116384a6981af74932832436aa2f6a43121f77ca81accc44e3a5160158ca03c",
+      "bytes": 1552637
+    },
+    "holidays_events.csv": {
+      "sha256": "81a183d6c4d691b57f84a0fde6bbf734a5b3c36a74b97378bf33a592648e2999",
+      "bytes": 22309
+    },
+    "sample_submission.csv": {
+      "sha256": "17505ec561d9bc64a3c10c3eb00474becf162d9053cebf014a58a6c82ed530c4",
+      "bytes": 342153
+    }
+  },
+  "base_panel_rows": 3029400,
+  "base_panel_columns": [
+    "id",
+    "date",
+    "store_nbr",
+    "family",
+    "sales",
+    "onpromotion",
+    "is_test",
+    "sales_observed",
+    "city",
+    "state",
+    "type",
+    "cluster",
+    "year",
+    "month",
+    "day",
+    "dayofweek",
+    "is_weekend",
+    "is_payday",
+    "is_holiday",
+    "is_national_holiday",
+    "is_regional_holiday",
+    "is_local_holiday",
+    "is_transfer_day",
+    "is_bridge_day",
+    "is_additional_day",
+    "is_work_day",
+    "is_event",
+    "is_transferred_original",
+    "is_workday"
+  ],
+  "base_panel_dtypes": {
+    "id": "int64",
+    "date": "datetime64[us]",
+    "store_nbr": "int16",
+    "family": "category",
+    "sales": "float64",
+    "onpromotion": "int32",
+    "is_test": "bool",
+    "sales_observed": "bool",
+    "city": "category",
+    "state": "category",
+    "type": "category",
+    "cluster": "int64",
+    "year": "int16",
+    "month": "int8",
+    "day": "int8",
+    "dayofweek": "int8",
+    "is_weekend": "bool",
+    "is_payday": "bool",
+    "is_holiday": "bool",
+    "is_national_holiday": "bool",
+    "is_regional_holiday": "bool",
+    "is_local_holiday": "bool",
+    "is_transfer_day": "bool",
+    "is_bridge_day": "bool",
+    "is_additional_day": "bool",
+    "is_work_day": "bool",
+    "is_event": "bool",
+    "is_transferred_original": "bool",
+    "is_workday": "bool"
+  },
+  "base_panel_sha256": "05fb244fa01b0d8bde14945a20f2e2206867982657a1732bc9aaa59c2a7402f0",
+  "raw_files_unchanged": true,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "pyarrow": "26.0.1"
+  },
+  "notes": "No sales imputation, no target lags, no model training; raw files unchanged."
+}

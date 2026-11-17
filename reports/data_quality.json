@@ -1,0 +1,250 @@
+{
+  "files": {
+    "train": {
+      "rows": 3000888,
+      "columns": [
+        "id",
+        "date",
+        "store_nbr",
+        "family",
+        "sales",
+        "onpromotion"
+      ],
+      "dtypes": {
+        "id": "int64",
+        "date": "datetime64[us]",
+        "store_nbr": "int16",
+        "family": "category",
+        "sales": "float64",
+        "onpromotion": "int32"
+      },
+      "nulls": {
+        "id": 0,
+        "date": 0,
+        "store_nbr": 0,
+        "family": 0,
+        "sales": 0,
+        "onpromotion": 0
+      },
+      "duplicate_rows": 0
+    },
+    "test": {
+      "rows": 28512,
+      "columns": [
+        "id",
+        "date",
+        "store_nbr",
+        "family",
+        "onpromotion"
+      ],
+      "dtypes": {
+        "id": "int64",
+        "date": "datetime64[us]",
+        "store_nbr": "int16",
+        "family": "category",
+        "onpromotion": "int32"
+      },
+      "nulls": {
+        "id": 0,
+        "date": 0,
+        "store_nbr": 0,
+        "family": 0,
+        "onpromotion": 0
+      },
+      "duplicate_rows": 0
+    },
+    "stores": {
+      "rows": 54,
+      "columns": [
+        "store_nbr",
+        "city",
+        "state",
+        "type",
+        "cluster"
+      ],
+      "dtypes": {
+        "store_nbr": "int16",
+        "city": "str",
+        "state": "str",
+        "type": "str",
+        "cluster": "int64"
+      },
+      "nulls": {
+        "store_nbr": 0,
+        "city": 0,
+        "state": 0,
+        "type": 0,
+        "cluster": 0
+      },
+      "duplicate_rows": 0
+    },
+    "oil": {
+      "rows": 1218,
+      "columns": [
+        "date",
+        "dcoilwtico"
+      ],
+      "dtypes": {
+        "date": "datetime64[us]",
+        "dcoilwtico": "float64"
+      },
+      "nulls": {
+        "date": 0,
+        "dcoilwtico": 43
+      },
+      "duplicate_rows": 0
+    },
+    "transactions": {
+      "rows": 83488,
+      "columns": [
+        "date",
+        "store_nbr",
+        "transactions"
+      ],
+      "dtypes": {
+        "date": "datetime64[us]",
+        "store_nbr": "int16",
+        "transactions": "int32"
+      },
+      "nulls": {
+        "date": 0,
+        "store_nbr": 0,
+        "transactions": 0
+      },
+      "duplicate_rows": 0
+    },
+    "holidays_events": {
+      "rows": 350,
+      "columns": [
+        "date",
+        "type",
+        "locale",
+        "locale_name",
+        "description",
+        "transferred"
+      ],
+      "dtypes": {
+        "date": "datetime64[us]",
+        "type": "str",
+        "locale": "str",
+        "locale_name": "str",
+        "description": "str",
+        "transferred": "bool"
+      },
+      "nulls": {
+        "date": 0,
+        "type": 0,
+        "locale": 0,
+        "locale_name": 0,
+        "description": 0,
+        "transferred": 0
+      },
+      "duplicate_rows": 0
+    },
+    "sample_submission": {
+      "rows": 28512,
+      "columns": [
+        "id",
+        "sales"
+      ],
+      "dtypes": {
+        "id": "int64",
+        "sales": "float64"
+      },
+      "nulls": {
+        "id": 0,
+        "sales": 0
+      },
+      "duplicate_rows": 0
+    }
+  },
+  "partitions": {
+    "train": {
+      "rows": 3000888,
+      "date_min": "2013-01-01",
+      "date_max": "2017-08-15",
+      "observed_days": 1684,
+      "missing_dates": [
+        "2013-12-25",
+        "2014-12-25",
+        "2015-12-25",
+        "2016-12-25"
+      ],
+      "stores": 54,
+      "families": 33,
+      "series": 1782,
+      "duplicate_keys": 0,
+      "duplicate_ids": 0,
+      "expected_store_family_pairs": 1782,
+      "pair_coverage_fraction": 1.0,
+      "daily_rows_min": 1782,
+      "daily_rows_max": 1782,
+      "days_with_incomplete_pair_grid": 0,
+      "null_required_values": 0,
+      "zero_sales_rows": 939130,
+      "zero_sales_fraction": 0.3129506999261552,
+      "fractional_sales_rows": 462113
+    },
+    "test": {
+      "rows": 28512,
+      "date_min": "2017-08-16",
+      "date_max": "2017-08-31",
+      "observed_days": 16,
+      "missing_dates": [],
+      "stores": 54,
+      "families": 33,
+      "series": 1782,
+      "duplicate_keys": 0,
+      "duplicate_ids": 0,
+      "expected_store_family_pairs": 1782,
+      "pair_coverage_fraction": 1.0,
+      "daily_rows_min": 1782,
+      "daily_rows_max": 1782,
+      "days_with_incomplete_pair_grid": 0,
+      "null_required_values": 0
+    }
+  },
+  "auxiliary": {
+    "holiday_unique_dates": 312,
+    "holiday_max_events_per_date": 4,
+    "holiday_duplicate_date_store_warning": "Aggregate events by date and applicable store before merge.",
+    "holiday_unmatched_locality_rows": [],
+    "oil_missing_values": 43,
+    "oil_duplicate_dates": 0,
+    "oil_coverage": {
+      "train": {
+        "sales_dates": 1684,
+        "dates_without_oil_row": 481,
+        "dates_with_missing_oil_value": 521
+      },
+      "test": {
+        "sales_dates": 16,
+        "dates_without_oil_row": 4,
+        "dates_with_missing_oil_value": 4
+      }
+    },
+    "transactions_date_max": "2017-08-15",
+    "transactions_available_during_test": false,
+    "transactions_duplicate_keys": 0,
+    "transactions_matched_train_store_days": 83488,
+    "train_store_days": 90936,
+    "transactions_train_coverage_fraction": 0.9180962435119204
+  },
+  "checks": {
+    "train_test_id_disjoint": true,
+    "test_after_train": true,
+    "test_starts_next_day": true,
+    "sample_submission_same_ids": true,
+    "sample_submission_same_id_order": true,
+    "test_pairs_seen_in_train": true,
+    "test_has_16_observed_days": true,
+    "test_calendar_contiguous": true
+  },
+  "notes": [
+    "sales là lượng bán, có thể có phần thập phân; onpromotion là số mặt hàng khuyến mãi.",
+    "Ngày thiếu khác số 0 thật. Không điền sales test hoặc ngày không quan sát thành 0.",
+    "Ghép stores nhiều-một; tổng hợp lễ theo ngày và phạm vi áp dụng của từng cửa hàng trước khi merge.",
+    "Giữ nguyên giá trị nguồn; bảng nền chưa tạo lag, scaler hay cửa sổ chuỗi. Các thành viên tự xử lý theo mốc dự báo.",
+    "Bảng nền chưa ghép oil/transactions. Giá dầu thiếu ngày/giá trị; giao dịch thực của ngày tương lai chưa biết."
+  ]
+}

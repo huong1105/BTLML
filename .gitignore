@@ -1,0 +1,31 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+kaggle.json
+*.zip
+*.7z
+# Keep dataset files local, including copies outside data/.
+*.csv
+*.parquet
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.pdf
+
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+
+# Row-level validation predictions are generated locally; aggregate metrics are in reports/.
+/outputs/baseline/*
+!/outputs/baseline/.gitkeep

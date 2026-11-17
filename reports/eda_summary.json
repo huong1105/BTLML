@@ -1,0 +1,1121 @@
+{
+  "source": "7 unchanged CSV files in data/raw; sales summaries use train only",
+  "train_rows": 3000888,
+  "test_rows": 28512,
+  "train_start": "2013-01-01",
+  "train_end": "2017-08-15",
+  "test_start": "2017-08-16",
+  "test_end": "2017-08-31",
+  "test_days": 16,
+  "stores": 54,
+  "families": 33,
+  "series": 1782,
+  "missing_train_dates": [
+    "2013-12-25",
+    "2014-12-25",
+    "2015-12-25",
+    "2016-12-25"
+  ],
+  "sales": {
+    "zero_rows": 939130,
+    "zero_fraction": 0.3129506999261552,
+    "fractional_rows": 462113,
+    "mean": 357.77574911261877,
+    "median": 11.0,
+    "p25": 0.0,
+    "p75": 195.84725,
+    "p95": 1965.0,
+    "p99": 5507.0,
+    "max": 124717.0
+  },
+  "family_summary": [
+    {
+      "family": "GROCERY I",
+      "rows": 90936,
+      "total_sales": 343462734.886,
+      "mean_sales": 3776.9721000044,
+      "zero_rate": 0.0806281341
+    },
+    {
+      "family": "BEVERAGES",
+      "rows": 90936,
+      "total_sales": 216954486.0,
+      "mean_sales": 2385.7931512272,
+      "zero_rate": 0.0806171373
+    },
+    {
+      "family": "PRODUCE",
+      "rows": 90936,
+      "total_sales": 122704684.67646,
+      "mean_sales": 1349.3521232126,
+      "zero_rate": 0.2835510689
+    },
+    {
+      "family": "CLEANING",
+      "rows": 90936,
+      "total_sales": 97521289.0,
+      "mean_sales": 1072.4167436439,
+      "zero_rate": 0.0806171373
+    },
+    {
+      "family": "DAIRY",
+      "rows": 90936,
+      "total_sales": 64487709.0,
+      "mean_sales": 709.1548891528,
+      "zero_rate": 0.0806171373
+    },
+    {
+      "family": "BREAD/BAKERY",
+      "rows": 90936,
+      "total_sales": 42133945.576369,
+      "mean_sales": 463.3362538089,
+      "zero_rate": 0.0806061406
+    },
+    {
+      "family": "POULTRY",
+      "rows": 90936,
+      "total_sales": 31876004.471721,
+      "mean_sales": 350.5322916306,
+      "zero_rate": 0.080760095
+    },
+    {
+      "family": "MEATS",
+      "rows": 90936,
+      "total_sales": 31086468.4040749,
+      "mean_sales": 341.8499648552,
+      "zero_rate": 0.0806171373
+    },
+    {
+      "family": "PERSONAL CARE",
+      "rows": 90936,
+      "total_sales": 24592051.0,
+      "mean_sales": 270.4325129762,
+      "zero_rate": 0.0806501276
+    },
+    {
+      "family": "DELI",
+      "rows": 90936,
+      "total_sales": 24110322.468767,
+      "mean_sales": 265.1350671766,
+      "zero_rate": 0.0806171373
+    },
+    {
+      "family": "HOME CARE",
+      "rows": 90936,
+      "total_sales": 16022744.0,
+      "mean_sales": 176.1980293833,
+      "zero_rate": 0.4090899094
+    },
+    {
+      "family": "EGGS",
+      "rows": 90936,
+      "total_sales": 15588296.0,
+      "mean_sales": 171.4205155274,
+      "zero_rate": 0.0806171373
+    },
+    {
+      "family": "FROZEN FOODS",
+      "rows": 90936,
+      "total_sales": 14073887.7199105,
+      "mean_sales": 154.7669539007,
+      "zero_rate": 0.0809140494
+    },
+    {
+      "family": "PREPARED FOODS",
+      "rows": 90936,
+      "total_sales": 8799895.1169425,
+      "mean_sales": 96.7702023065,
+      "zero_rate": 0.0808370722
+    },
+    {
+      "family": "LIQUOR,WINE,BEER",
+      "rows": 90936,
+      "total_sales": 7746640.0,
+      "mean_sales": 85.187824404,
+      "zero_rate": 0.1786531187
+    },
+    {
+      "family": "SEAFOOD",
+      "rows": 90936,
+      "total_sales": 2015431.8828236,
+      "mean_sales": 22.1631904067,
+      "zero_rate": 0.1935866983
+    },
+    {
+      "family": "GROCERY II",
+      "rows": 90936,
+      "total_sales": 1962767.0,
+      "mean_sales": 21.5840481218,
+      "zero_rate": 0.1211291458
+    },
+    {
+      "family": "HOME AND KITCHEN I",
+      "rows": 90936,
+      "total_sales": 1861491.0,
+      "mean_sales": 20.4703417788,
+      "zero_rate": 0.3464524501
+    },
+    {
+      "family": "HOME AND KITCHEN II",
+      "rows": 90936,
+      "total_sales": 1520670.0,
+      "mean_sales": 16.7224201636,
+      "zero_rate": 0.3471342483
+    },
+    {
+      "family": "CELEBRATION",
+      "rows": 90936,
+      "total_sales": 761177.0,
+      "mean_sales": 8.3704693411,
+      "zero_rate": 0.4363398434
+    },
+    {
+      "family": "LINGERIE",
+      "rows": 90936,
+      "total_sales": 653114.0,
+      "mean_sales": 7.1821280901,
+      "zero_rate": 0.1604645025
+    },
+    {
+      "family": "LADIESWEAR",
+      "rows": 90936,
+      "total_sales": 651159.0,
+      "mean_sales": 7.1606294537,
+      "zero_rate": 0.5984648544
+    },
+    {
+      "family": "PLAYERS AND ELECTRONICS",
+      "rows": 90936,
+      "total_sales": 562608.0,
+      "mean_sales": 6.1868566904,
+      "zero_rate": 0.4488651359
+    },
+    {
+      "family": "AUTOMOTIVE",
+      "rows": 90936,
+      "total_sales": 554822.0,
+      "mean_sales": 6.1012360341,
+      "zero_rate": 0.1278481569
+    },
+    {
+      "family": "LAWN AND GARDEN",
+      "rows": 90936,
+      "total_sales": 548842.0,
+      "mean_sales": 6.0354754993,
+      "zero_rate": 0.4678455177
+    },
+    {
+      "family": "PET SUPPLIES",
+      "rows": 90936,
+      "total_sales": 356584.0,
+      "mean_sales": 3.9212633061,
+      "zero_rate": 0.5461533386
+    },
+    {
+      "family": "BEAUTY",
+      "rows": 90936,
+      "total_sales": 337893.0,
+      "mean_sales": 3.7157231459,
+      "zero_rate": 0.2628222046
+    },
+    {
+      "family": "SCHOOL AND OFFICE SUPPLIES",
+      "rows": 90936,
+      "total_sales": 269316.0,
+      "mean_sales": 2.9615993666,
+      "zero_rate": 0.7408287147
+    },
+    {
+      "family": "MAGAZINES",
+      "rows": 90936,
+      "total_sales": 266359.0,
+      "mean_sales": 2.9290819917,
+      "zero_rate": 0.5653866456
+    },
+    {
+      "family": "HARDWARE",
+      "rows": 90936,
+      "total_sales": 103470.0,
+      "mean_sales": 1.1378332014,
+      "zero_rate": 0.4786223278
+    },
+    {
+      "family": "HOME APPLIANCES",
+      "rows": 90936,
+      "total_sales": 41601.0,
+      "mean_sales": 0.4574755872,
+      "zero_rate": 0.7351763878
+    },
+    {
+      "family": "BABY CARE",
+      "rows": 90936,
+      "total_sales": 10051.0,
+      "mean_sales": 0.1105282836,
+      "zero_rate": 0.9413103721
+    },
+    {
+      "family": "BOOKS",
+      "rows": 90936,
+      "total_sales": 6438.0,
+      "mean_sales": 0.0707970441,
+      "zero_rate": 0.9695500132
+    }
+  ],
+  "store_summary": [
+    {
+      "store_nbr": 44,
+      "rows": 55572,
+      "total_sales": 62087553.250089,
+      "positive_rows": 45598,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 45,
+      "rows": 55572,
+      "total_sales": 54498010.416674,
+      "positive_rows": 44814,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 47,
+      "rows": 55572,
+      "total_sales": 50948310.061006,
+      "positive_rows": 45039,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 3,
+      "rows": 55572,
+      "total_sales": 50481910.185082,
+      "positive_rows": 45491,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 49,
+      "rows": 55572,
+      "total_sales": 43420095.783768,
+      "positive_rows": 44820,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 46,
+      "rows": 55572,
+      "total_sales": 41896062.1216342,
+      "positive_rows": 44835,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 48,
+      "rows": 55572,
+      "total_sales": 35933130.2739365,
+      "positive_rows": 43723,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 51,
+      "rows": 55572,
+      "total_sales": 32911489.537604,
+      "positive_rows": 44390,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 8,
+      "rows": 55572,
+      "total_sales": 30494286.928015,
+      "positive_rows": 44496,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 50,
+      "rows": 55572,
+      "total_sales": 28653020.6246953,
+      "positive_rows": 44095,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 11,
+      "rows": 55572,
+      "total_sales": 28325558.481396,
+      "positive_rows": 42177,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 7,
+      "rows": 55572,
+      "total_sales": 26952049.582971,
+      "positive_rows": 43995,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 9,
+      "rows": 55572,
+      "total_sales": 26409441.0647935,
+      "positive_rows": 43376,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 6,
+      "rows": 55572,
+      "total_sales": 25183679.997054,
+      "positive_rows": 42952,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 24,
+      "rows": 55572,
+      "total_sales": 23767732.701713,
+      "positive_rows": 41041,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 2,
+      "rows": 55572,
+      "total_sales": 21557388.6445642,
+      "positive_rows": 43570,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 39,
+      "rows": 55572,
+      "total_sales": 20252192.53354,
+      "positive_rows": 43446,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 37,
+      "rows": 55572,
+      "total_sales": 19970635.6144784,
+      "positive_rows": 43583,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 27,
+      "rows": 55572,
+      "total_sales": 19188021.3815342,
+      "positive_rows": 43241,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 4,
+      "rows": 55572,
+      "total_sales": 18909700.380001,
+      "positive_rows": 42942,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 38,
+      "rows": 55572,
+      "total_sales": 18859999.2605296,
+      "positive_rows": 43349,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 40,
+      "rows": 55572,
+      "total_sales": 18395757.405968,
+      "positive_rows": 38246,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 28,
+      "rows": 55572,
+      "total_sales": 18383154.8339259,
+      "positive_rows": 40506,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 17,
+      "rows": 55572,
+      "total_sales": 18030969.250161,
+      "positive_rows": 38634,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 31,
+      "rows": 55572,
+      "total_sales": 17746872.701507,
+      "positive_rows": 41042,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 34,
+      "rows": 55572,
+      "total_sales": 17090734.15915,
+      "positive_rows": 41802,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 43,
+      "rows": 55572,
+      "total_sales": 16391692.2119096,
+      "positive_rows": 36480,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 5,
+      "rows": 55572,
+      "total_sales": 15592404.5723532,
+      "positive_rows": 43158,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 36,
+      "rows": 55572,
+      "total_sales": 15322431.096578,
+      "positive_rows": 36291,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 41,
+      "rows": 55572,
+      "total_sales": 14991039.1385844,
+      "positive_rows": 42999,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 33,
+      "rows": 55572,
+      "total_sales": 14178501.293449,
+      "positive_rows": 37136,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 1,
+      "rows": 55572,
+      "total_sales": 14145012.8696541,
+      "positive_rows": 42773,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 18,
+      "rows": 55572,
+      "total_sales": 13259375.6899043,
+      "positive_rows": 37880,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 19,
+      "rows": 55572,
+      "total_sales": 13049509.836733,
+      "positive_rows": 39153,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 20,
+      "rows": 55572,
+      "total_sales": 12920954.5928321,
+      "positive_rows": 25301,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 23,
+      "rows": 55572,
+      "total_sales": 11651380.6749087,
+      "positive_rows": 39888,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 15,
+      "rows": 55572,
+      "total_sales": 11451270.022648,
+      "positive_rows": 39040,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 25,
+      "rows": 55572,
+      "total_sales": 11420997.8725745,
+      "positive_rows": 39045,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 14,
+      "rows": 55572,
+      "total_sales": 11387918.748218,
+      "positive_rows": 36303,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 53,
+      "rows": 55572,
+      "total_sales": 11216167.2826831,
+      "positive_rows": 31544,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 54,
+      "rows": 55572,
+      "total_sales": 11057483.1179049,
+      "positive_rows": 36262,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 16,
+      "rows": 55572,
+      "total_sales": 10986412.5547492,
+      "positive_rows": 36383,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 12,
+      "rows": 55572,
+      "total_sales": 10659217.957236,
+      "positive_rows": 36771,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 13,
+      "rows": 55572,
+      "total_sales": 10523045.81794,
+      "positive_rows": 37146,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 29,
+      "rows": 55572,
+      "total_sales": 9725157.696084,
+      "positive_rows": 23775,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 10,
+      "rows": 55572,
+      "total_sales": 9613905.735863,
+      "positive_rows": 37145,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 21,
+      "rows": 55572,
+      "total_sales": 9255505.91021,
+      "positive_rows": 21506,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 42,
+      "rows": 55572,
+      "total_sales": 8945767.8851627,
+      "positive_rows": 20997,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 26,
+      "rows": 55572,
+      "total_sales": 7755121.8918648,
+      "positive_rows": 38387,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 35,
+      "rows": 55572,
+      "total_sales": 7676679.4216696,
+      "positive_rows": 33834,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 30,
+      "rows": 55572,
+      "total_sales": 7382073.663963,
+      "positive_rows": 36713,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 32,
+      "rows": 55572,
+      "total_sales": 5951795.9975515,
+      "positive_rows": 33577,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 22,
+      "rows": 55572,
+      "total_sales": 4090201.7408,
+      "positive_rows": 17478,
+      "observed_days": 1684
+    },
+    {
+      "store_nbr": 52,
+      "rows": 55572,
+      "total_sales": 2696169.733249,
+      "positive_rows": 3590,
+      "observed_days": 1684
+    }
+  ],
+  "weekday_summary": [
+    {
+      "dayofweek": 0,
+      "mean_sales": 346.5447323527,
+      "rows": 429462,
+      "weekday": "Thứ Hai"
+    },
+    {
+      "dayofweek": 1,
+      "mean_sales": 319.8238428294,
+      "rows": 431244,
+      "weekday": "Thứ Ba"
+    },
+    {
+      "dayofweek": 2,
+      "mean_sales": 332.9094014993,
+      "rows": 427680,
+      "weekday": "Thứ Tư"
+    },
+    {
+      "dayofweek": 3,
+      "mean_sales": 283.5405168993,
+      "rows": 427680,
+      "weekday": "Thứ Năm"
+    },
+    {
+      "dayofweek": 4,
+      "mean_sales": 325.2381375335,
+      "rows": 427680,
+      "weekday": "Thứ Sáu"
+    },
+    {
+      "dayofweek": 5,
+      "mean_sales": 433.3364724706,
+      "rows": 429462,
+      "weekday": "Thứ Bảy"
+    },
+    {
+      "dayofweek": 6,
+      "mean_sales": 463.085365645,
+      "rows": 427680,
+      "weekday": "Chủ nhật"
+    }
+  ],
+  "promotion_overall": [
+    {
+      "promoted": false,
+      "rows": 2389559,
+      "mean_sales": 158.2466813936,
+      "median_sales": 3.0
+    },
+    {
+      "promoted": true,
+      "rows": 611329,
+      "mean_sales": 1137.6937303134,
+      "median_sales": 373.0
+    }
+  ],
+  "promotion_by_family": [
+    {
+      "family": "AUTOMOTIVE",
+      "promoted": false,
+      "rows": 87882,
+      "mean_sales": 5.8530870941
+    },
+    {
+      "family": "AUTOMOTIVE",
+      "promoted": true,
+      "rows": 3054,
+      "mean_sales": 13.2419777341
+    },
+    {
+      "family": "BABY CARE",
+      "promoted": false,
+      "rows": 90883,
+      "mean_sales": 0.1096244622
+    },
+    {
+      "family": "BABY CARE",
+      "promoted": true,
+      "rows": 53,
+      "mean_sales": 1.6603773585
+    },
+    {
+      "family": "BEAUTY",
+      "promoted": false,
+      "rows": 79819,
+      "mean_sales": 3.0784524988
+    },
+    {
+      "family": "BEAUTY",
+      "promoted": true,
+      "rows": 11117,
+      "mean_sales": 8.2912656292
+    },
+    {
+      "family": "BEVERAGES",
+      "promoted": false,
+      "rows": 39231,
+      "mean_sales": 1292.2725905534
+    },
+    {
+      "family": "BEVERAGES",
+      "promoted": true,
+      "rows": 51705,
+      "mean_sales": 3215.4983077072
+    },
+    {
+      "family": "BOOKS",
+      "promoted": false,
+      "rows": 90936,
+      "mean_sales": 0.0707970441
+    },
+    {
+      "family": "BREAD/BAKERY",
+      "promoted": false,
+      "rows": 52040,
+      "mean_sales": 379.5132492548
+    },
+    {
+      "family": "BREAD/BAKERY",
+      "promoted": true,
+      "rows": 38896,
+      "mean_sales": 575.4852963068
+    },
+    {
+      "family": "CELEBRATION",
+      "promoted": false,
+      "rows": 87725,
+      "mean_sales": 7.9459219151
+    },
+    {
+      "family": "CELEBRATION",
+      "promoted": true,
+      "rows": 3211,
+      "mean_sales": 19.9691684833
+    },
+    {
+      "family": "CLEANING",
+      "promoted": false,
+      "rows": 41036,
+      "mean_sales": 868.3783263476
+    },
+    {
+      "family": "CLEANING",
+      "promoted": true,
+      "rows": 49900,
+      "mean_sales": 1240.210741483
+    },
+    {
+      "family": "DAIRY",
+      "promoted": false,
+      "rows": 44951,
+      "mean_sales": 479.8111276724
+    },
+    {
+      "family": "DAIRY",
+      "promoted": true,
+      "rows": 45985,
+      "mean_sales": 933.3417201261
+    },
+    {
+      "family": "DELI",
+      "promoted": false,
+      "rows": 51457,
+      "mean_sales": 221.763381633
+    },
+    {
+      "family": "DELI",
+      "promoted": true,
+      "rows": 39479,
+      "mean_sales": 321.6658005541
+    },
+    {
+      "family": "EGGS",
+      "promoted": false,
+      "rows": 63455,
+      "mean_sales": 154.7039319203
+    },
+    {
+      "family": "EGGS",
+      "promoted": true,
+      "rows": 27481,
+      "mean_sales": 210.0199410502
+    },
+    {
+      "family": "FROZEN FOODS",
+      "promoted": false,
+      "rows": 55116,
+      "mean_sales": 106.5243493889
+    },
+    {
+      "family": "FROZEN FOODS",
+      "promoted": true,
+      "rows": 35820,
+      "mean_sales": 228.9975343102
+    },
+    {
+      "family": "GROCERY I",
+      "promoted": false,
+      "rows": 34050,
+      "mean_sales": 2717.7208134214
+    },
+    {
+      "family": "GROCERY I",
+      "promoted": true,
+      "rows": 56886,
+      "mean_sales": 4411.0034312309
+    },
+    {
+      "family": "GROCERY II",
+      "promoted": false,
+      "rows": 86791,
+      "mean_sales": 21.3027502852
+    },
+    {
+      "family": "GROCERY II",
+      "promoted": true,
+      "rows": 4145,
+      "mean_sales": 27.4740651387
+    },
+    {
+      "family": "HARDWARE",
+      "promoted": false,
+      "rows": 90804,
+      "mean_sales": 1.1360402625
+    },
+    {
+      "family": "HARDWARE",
+      "promoted": true,
+      "rows": 132,
+      "mean_sales": 2.3712121212
+    },
+    {
+      "family": "HOME AND KITCHEN I",
+      "promoted": false,
+      "rows": 76334,
+      "mean_sales": 16.8377394084
+    },
+    {
+      "family": "HOME AND KITCHEN I",
+      "promoted": true,
+      "rows": 14602,
+      "mean_sales": 39.4602794138
+    },
+    {
+      "family": "HOME AND KITCHEN II",
+      "promoted": false,
+      "rows": 71952,
+      "mean_sales": 10.2752390483
+    },
+    {
+      "family": "HOME AND KITCHEN II",
+      "promoted": true,
+      "rows": 18984,
+      "mean_sales": 41.1581331648
+    },
+    {
+      "family": "HOME APPLIANCES",
+      "promoted": false,
+      "rows": 90878,
+      "mean_sales": 0.4568762517
+    },
+    {
+      "family": "HOME APPLIANCES",
+      "promoted": true,
+      "rows": 58,
+      "mean_sales": 1.3965517241
+    },
+    {
+      "family": "HOME CARE",
+      "promoted": false,
+      "rows": 58398,
+      "mean_sales": 101.9560087674
+    },
+    {
+      "family": "HOME CARE",
+      "promoted": true,
+      "rows": 32538,
+      "mean_sales": 309.4448644662
+    },
+    {
+      "family": "LADIESWEAR",
+      "promoted": false,
+      "rows": 90476,
+      "mean_sales": 7.0999381051
+    },
+    {
+      "family": "LADIESWEAR",
+      "promoted": true,
+      "rows": 460,
+      "mean_sales": 19.097826087
+    },
+    {
+      "family": "LAWN AND GARDEN",
+      "promoted": false,
+      "rows": 86704,
+      "mean_sales": 5.5107030817
+    },
+    {
+      "family": "LAWN AND GARDEN",
+      "promoted": true,
+      "rows": 4232,
+      "mean_sales": 16.7868620038
+    },
+    {
+      "family": "LINGERIE",
+      "promoted": false,
+      "rows": 88808,
+      "mean_sales": 7.0534749122
+    },
+    {
+      "family": "LINGERIE",
+      "promoted": true,
+      "rows": 2128,
+      "mean_sales": 12.5512218045
+    },
+    {
+      "family": "LIQUOR,WINE,BEER",
+      "promoted": false,
+      "rows": 73019,
+      "mean_sales": 76.4749311823
+    },
+    {
+      "family": "LIQUOR,WINE,BEER",
+      "promoted": true,
+      "rows": 17917,
+      "mean_sales": 120.6963777418
+    },
+    {
+      "family": "MAGAZINES",
+      "promoted": false,
+      "rows": 90777,
+      "mean_sales": 2.9272062307
+    },
+    {
+      "family": "MAGAZINES",
+      "promoted": true,
+      "rows": 159,
+      "mean_sales": 4.0
+    },
+    {
+      "family": "MEATS",
+      "promoted": false,
+      "rows": 69468,
+      "mean_sales": 303.0810875876
+    },
+    {
+      "family": "MEATS",
+      "promoted": true,
+      "rows": 21468,
+      "mean_sales": 467.3016308709
+    },
+    {
+      "family": "PERSONAL CARE",
+      "promoted": false,
+      "rows": 52705,
+      "mean_sales": 220.8789678399
+    },
+    {
+      "family": "PERSONAL CARE",
+      "promoted": true,
+      "rows": 38231,
+      "mean_sales": 338.7466977061
+    },
+    {
+      "family": "PET SUPPLIES",
+      "promoted": false,
+      "rows": 87883,
+      "mean_sales": 3.5073791291
+    },
+    {
+      "family": "PET SUPPLIES",
+      "promoted": true,
+      "rows": 3053,
+      "mean_sales": 15.8352440223
+    },
+    {
+      "family": "PLAYERS AND ELECTRONICS",
+      "promoted": false,
+      "rows": 90087,
+      "mean_sales": 6.0815211962
+    },
+    {
+      "family": "PLAYERS AND ELECTRONICS",
+      "promoted": true,
+      "rows": 849,
+      "mean_sales": 17.3639575972
+    },
+    {
+      "family": "POULTRY",
+      "promoted": false,
+      "rows": 71232,
+      "mean_sales": 313.3345128336
+    },
+    {
+      "family": "POULTRY",
+      "promoted": true,
+      "rows": 19704,
+      "mean_sales": 485.0061131527
+    },
+    {
+      "family": "PREPARED FOODS",
+      "promoted": false,
+      "rows": 73258,
+      "mean_sales": 92.4818951341
+    },
+    {
+      "family": "PREPARED FOODS",
+      "promoted": true,
+      "rows": 17678,
+      "mean_sales": 114.5410364979
+    },
+    {
+      "family": "PRODUCE",
+      "promoted": false,
+      "rows": 60152,
+      "mean_sales": 792.1019107829
+    },
+    {
+      "family": "PRODUCE",
+      "promoted": true,
+      "rows": 30784,
+      "mean_sales": 2438.2201968245
+    },
+    {
+      "family": "SCHOOL AND OFFICE SUPPLIES",
+      "promoted": false,
+      "rows": 86882,
+      "mean_sales": 1.0220183697
+    },
+    {
+      "family": "SCHOOL AND OFFICE SUPPLIES",
+      "promoted": true,
+      "rows": 4054,
+      "mean_sales": 44.5291070548
+    },
+    {
+      "family": "SEAFOOD",
+      "promoted": false,
+      "rows": 74370,
+      "mean_sales": 19.2073196805
+    },
+    {
+      "family": "SEAFOOD",
+      "promoted": true,
+      "rows": 16566,
+      "mean_sales": 35.4330265717
+    }
+  ],
+  "example_series": [
+    {
+      "store_nbr": 32,
+      "family": "LAWN AND GARDEN",
+      "mean_sales": 0.0053444181,
+      "zero_rate": 0.9970308789
+    },
+    {
+      "store_nbr": 45,
+      "family": "CELEBRATION",
+      "mean_sales": 23.0789786223,
+      "zero_rate": 0.3972684086
+    },
+    {
+      "store_nbr": 44,
+      "family": "GROCERY I",
+      "mean_sales": 9730.4364833729,
+      "zero_rate": 0.0029691211
+    }
+  ],
+  "auxiliary": {
+    "holiday_rows": 350,
+    "holiday_dates": 312,
+    "holiday_transferred_original_rows": 12,
+    "oil_missing_values": 43,
+    "transactions_last_date": "2017-08-15"
+  }
+}
