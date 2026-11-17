@@ -148,5 +148,3 @@ git push -u origin main
 ```
 
 Thay địa chỉ remote bằng repo của bạn. `.gitignore` đã loại dữ liệu gốc, dữ liệu processed và môi trường Python.
-#   B T L M L  
- 
