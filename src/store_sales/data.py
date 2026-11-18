@@ -1,7 +1,7 @@
 """Reusable TV1 starter: read, inspect and prepare the competition data.
 
-Original targets are never imputed. Historical lags/scaling belong to model
-pipelines and must be fitted separately inside each chronological fold.
+Original targets are never imputed. Historical features are generated separately
+by store_sales.features; model-specific learned transforms fit on train only.
 """
 from __future__ import annotations
 
@@ -38,8 +38,6 @@ def load_raw_data(raw_dir: Path) -> dict[str, pd.DataFrame]:
         raise FileNotFoundError(f"Missing CSVs in {raw_dir}: {', '.join(missing)}")
     tables: dict[str, pd.DataFrame] = {}
     for name in RAW_FILES:
-        # Categorical labels and compact integer columns save memory without
-        # changing source values. Keep sales as float64, including real zeros.
         dtypes = {}
         if name in {"train.csv", "test.csv"}:
             dtypes = {"id": "int64", "store_nbr": "int16", "family": "category", "onpromotion": "int32"}
@@ -238,7 +236,7 @@ def quality_report(tables: dict[str, pd.DataFrame]) -> dict:
         "sales là lượng bán, có thể có phần thập phân; onpromotion là số mặt hàng khuyến mãi.",
         "Ngày thiếu khác số 0 thật. Không điền sales test hoặc ngày không quan sát thành 0.",
         "Ghép stores nhiều-một; tổng hợp lễ theo ngày và phạm vi áp dụng của từng cửa hàng trước khi merge.",
-        "Giữ nguyên giá trị nguồn; bảng nền chưa tạo lag, scaler hay cửa sổ chuỗi. Các thành viên tự xử lý theo mốc dự báo.",
+        "Giữ nguyên giá trị nguồn; bảng nền chưa có lag/scaler/cửa sổ chuỗi. TV1 tạo features lịch sử riêng bằng scripts/prepare_features.py; chủ model xử lý encoding/scaling/chuỗi theo mốc.",
         "Bảng nền chưa ghép oil/transactions. Giá dầu thiếu ngày/giá trị; giao dịch thực của ngày tương lai chưa biết.",
     ]
     return report

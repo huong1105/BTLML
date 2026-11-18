@@ -37,6 +37,6 @@ Nguồn: 7 CSV của [Kaggle Store Sales](https://www.kaggle.com/competitions/st
 | `is_work_day`, `is_event`, `is_transferred_original` | Ngày làm bù, sự kiện, ngày gốc của lễ đã chuyển |
 | `is_workday` | Cờ lịch quy ước: `(không cuối tuần hoặc ngày làm bù) và không là ngày lễ`. Không chứng minh siêu thị thực sự mở cửa |
 
-`oil` và `transactions` vẫn được kiểm tra nhưng chưa ghép vào bảng nền. Không nội suy/chuẩn hóa theo toàn bộ tương lai. Các thành viên dùng tiếp tự quyết định cách xây đặc trưng lịch sử và chỉ lấy thông tin đã biết tại mốc dự báo. Nhiều nhóm hàng có đơn vị khác nhau; tổng `sales` giữa các nhóm là tổng kỹ thuật của biến đích, không phải doanh thu hay một đơn vị vật lý thống nhất.
+`oil` và `transactions` vẫn được kiểm tra nhưng chưa ghép vào bảng nền. Không nội suy/chuẩn hóa theo toàn bộ tương lai. Features lịch sử của TV1 được sinh riêng trong `data/processed/features/` và chỉ lấy thông tin đã biết tại mốc dự báo; xem [quy tắc và từ điển features](features.md). Bảng nền vẫn giữ nguyên 29 cột. Nhiều nhóm hàng có đơn vị khác nhau; tổng `sales` giữa các nhóm là tổng kỹ thuật của biến đích, không phải doanh thu hay một đơn vị vật lý thống nhất.
 
 Khi cần chuỗi liên tục, reindex riêng từng cửa hàng-nhóm hàng và giữ cờ thiếu. Ngày không có quan sát không đồng nghĩa lượng bán bằng 0. Hướng dẫn chạy và nội dung bàn giao ở [TV1.md](TV1.md).

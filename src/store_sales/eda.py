@@ -217,7 +217,7 @@ def write_eda_report(analysis: dict, paths: list[Path], report_dir: Path) -> Non
               f"- Ngày lễ: {aux['holiday_rows']} dòng nhưng chỉ {aux['holiday_dates']} ngày khác nhau; {aux['holiday_transferred_original_rows']} dòng là ngày gốc đã chuyển. Tổng hợp theo ngày/cửa hàng và phạm vi trước khi ghép, giữ cờ sự kiện riêng.",
               f"- Oil có {aux['oil_missing_values']} giá trị thiếu ngay trong CSV; lịch thiếu dòng được báo riêng trong data_quality.md. Bảng nền chưa tự thêm giá dầu hay nội suy.",
               f"- Transactions kết thúc {aux['transactions_last_date']}; không có giao dịch thực cho test. Giữ nguyên nguồn, không ghép giao dịch tương lai vào đầu vào dự báo.",
-              "- Bảng nền giữ sales và id gốc, chỉ ghép metadata/lịch/lễ. Chưa tạo lag, scaler hay chọn mô hình; các bước dùng nhãn để học phải được các thành viên khác thực hiện theo cách kiểm định nhóm thống nhất.",
+              "- Bảng nền giữ sales và id gốc, chỉ ghép metadata/lịch/lễ. Features lịch sử được TV1 tạo riêng bằng scripts/prepare_features.py; chủ model phụ trách encoding/scaling/chuỗi và huấn luyện theo mốc nhóm thống nhất.",
               "- Phân tích toàn bộ train ở đây phục vụ mô tả. Các kết luận liên quan lựa chọn đặc trưng không thay thế kiểm định dự báo theo thời gian.",
               "", "## Biểu đồ", ""]
     for path in paths:
