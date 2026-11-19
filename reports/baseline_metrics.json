@@ -20,7 +20,7 @@
   "predictions_path": "outputs/baseline/validation_predictions.csv",
   "predictions_sha256": "e5eff83a6ea4942161470deecd91467863277ee170ad628e05d75a3cbe99f879",
   "environment": {
-    "python": "3.12.14",
+    "python": "3.12.10",
     "numpy": "2.3.5",
     "pandas": "3.0.1"
   }

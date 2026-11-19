@@ -1,5 +1,6 @@
 {
   "complete": true,
+  "source_file": "base_panel.parquet",
   "source_sha256": "05fb244fa01b0d8bde14945a20f2e2206867982657a1732bc9aaa59c2a7402f0",
   "horizon_days": 16,
   "training_step_days": 16,
@@ -790,54 +791,11 @@
     }
   },
   "environment": {
-    "python": "3.12.14",
+    "python": "3.12.10",
     "pandas": "3.0.1",
     "numpy": "2.3.5",
     "pyarrow": "26.0.1"
   },
-  "files": {
-    "tuning/features.parquet": {
-      "rows": 28512,
-      "columns": 46,
-      "sha256": "cb3c87877a01efd5c1db82f84e5962e1fc9034263e55f598ee04209d54bdab5c"
-    },
-    "tuning/labels.parquet": {
-      "rows": 28512,
-      "columns": 2,
-      "sha256": "2713fb2b6f00c823b0c304461e66746fe93ab88713451fd891febc550d12b56b"
-    },
-    "tuning/train.parquet": {
-      "rows": 2765664,
-      "columns": 47,
-      "sha256": "7620ef0246df0f93bc0f5bc258d3529e4327c0c56af435a23cb210f56ae1d319"
-    },
-    "validation/features.parquet": {
-      "rows": 28512,
-      "columns": 46,
-      "sha256": "c09d2dead3fdf0156287b148dc47d9efabeb4f895ec18130a9dd6632e246c35c"
-    },
-    "validation/labels.parquet": {
-      "rows": 28512,
-      "columns": 2,
-      "sha256": "1cd6738f430a4279cac28834eb03bf410d46ec3f4f56cac479d843b30cf2afb2"
-    },
-    "validation/train.parquet": {
-      "rows": 2794176,
-      "columns": 47,
-      "sha256": "d03b44ee67748d02bff19135b478b36d7e9f2476b484d0de5175755f7657020e"
-    },
-    "test/features.parquet": {
-      "rows": 28512,
-      "columns": 46,
-      "sha256": "b38d0b84c49bfecfb26e254e6846b676cbe185d56b6179a19fcb778eed6164b5"
-    },
-    "test/train.parquet": {
-      "rows": 2822688,
-      "columns": 47,
-      "sha256": "d464de80648c3d8a2d0854ffc43377422681f7d5bf3f685d194d4f780a966b0f"
-    }
-  },
-  "source_file": "base_panel.parquet",
   "feature_schema": [
     {
       "name": "id",
@@ -857,7 +815,7 @@
     },
     {
       "name": "family",
-      "type": "dictionary<values=string, indices=int8, ordered=0>"
+      "type": "dictionary<values=large_string, indices=int8, ordered=0>"
     },
     {
       "name": "onpromotion",
@@ -865,15 +823,15 @@
     },
     {
       "name": "city",
-      "type": "dictionary<values=string, indices=int8, ordered=0>"
+      "type": "dictionary<values=large_string, indices=int8, ordered=0>"
     },
     {
       "name": "state",
-      "type": "dictionary<values=string, indices=int8, ordered=0>"
+      "type": "dictionary<values=large_string, indices=int8, ordered=0>"
     },
     {
       "name": "type",
-      "type": "dictionary<values=string, indices=int8, ordered=0>"
+      "type": "dictionary<values=large_string, indices=int8, ordered=0>"
     },
     {
       "name": "cluster",
@@ -1023,5 +981,47 @@
       "name": "sales_origin_lag_28_missing",
       "type": "bool"
     }
-  ]
+  ],
+  "files": {
+    "tuning/features.parquet": {
+      "rows": 28512,
+      "columns": 46,
+      "sha256": "cb3c87877a01efd5c1db82f84e5962e1fc9034263e55f598ee04209d54bdab5c"
+    },
+    "tuning/labels.parquet": {
+      "rows": 28512,
+      "columns": 2,
+      "sha256": "2713fb2b6f00c823b0c304461e66746fe93ab88713451fd891febc550d12b56b"
+    },
+    "tuning/train.parquet": {
+      "rows": 2765664,
+      "columns": 47,
+      "sha256": "7620ef0246df0f93bc0f5bc258d3529e4327c0c56af435a23cb210f56ae1d319"
+    },
+    "validation/features.parquet": {
+      "rows": 28512,
+      "columns": 46,
+      "sha256": "c09d2dead3fdf0156287b148dc47d9efabeb4f895ec18130a9dd6632e246c35c"
+    },
+    "validation/labels.parquet": {
+      "rows": 28512,
+      "columns": 2,
+      "sha256": "1cd6738f430a4279cac28834eb03bf410d46ec3f4f56cac479d843b30cf2afb2"
+    },
+    "validation/train.parquet": {
+      "rows": 2794176,
+      "columns": 47,
+      "sha256": "d03b44ee67748d02bff19135b478b36d7e9f2476b484d0de5175755f7657020e"
+    },
+    "test/features.parquet": {
+      "rows": 28512,
+      "columns": 46,
+      "sha256": "b38d0b84c49bfecfb26e254e6846b676cbe185d56b6179a19fcb778eed6164b5"
+    },
+    "test/train.parquet": {
+      "rows": 2822688,
+      "columns": 47,
+      "sha256": "d464de80648c3d8a2d0854ffc43377422681f7d5bf3f685d194d4f780a966b0f"
+    }
+  }
 }

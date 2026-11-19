@@ -95,7 +95,7 @@
   "base_panel_sha256": "05fb244fa01b0d8bde14945a20f2e2206867982657a1732bc9aaa59c2a7402f0",
   "raw_files_unchanged": true,
   "environment": {
-    "python": "3.12.14",
+    "python": "3.12.10",
     "numpy": "2.3.5",
     "pandas": "3.0.1",
     "pyarrow": "26.0.1"
