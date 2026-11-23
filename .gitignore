@@ -29,3 +29,6 @@ kaggle.json
 # Row-level validation predictions are generated locally; aggregate metrics are in reports/.
 /outputs/baseline/*
 !/outputs/baseline/.gitkeep
+/outputs/models/*
+!/outputs/models/.gitkeep
+configs/*.json

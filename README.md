@@ -160,3 +160,6 @@ Xem chi tiết ngắn gọn trong [docs/TV1.md](docs/TV1.md).
 Giữ CSV gốc và Parquet ngoài Git theo `.gitignore`, kể cả các bản CSV sao chép sang vị trí khác trong dự án. Có thể commit notebook, mã, báo cáo tổng hợp và hình EDA. Người nhận tạo bảng nền bằng `prepare_data.py`, rồi tạo features lịch sử bằng `prepare_features.py`; không cần chạy EDA hoặc baseline để có các bảng này. Bảng nền vẫn giữ 29 cột; features lịch sử nằm riêng. Oil/transactions chưa dùng trong bản đầu; scaling/encoding/huấn luyện do chủ model phụ trách.
 
 Baseline dùng cùng raw train đã kiểm tra, không sửa bảng nền. Các mô hình khác vẫn tự quyết định scaling/encoding và đặc trưng lịch sử, chỉ fit bước học thống kê trên train của từng lần kiểm định. So sánh với baseline trên cùng origin, ngày/ID validation và RMSLE. Không kết luận mô hình nào tốt hơn nếu chưa có điểm thật của mô hình đó.
+
+
+Model training instructions: [README_ML.md](README_ML.md).
